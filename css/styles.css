@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  
+/*page*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100vw;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #5B5656;
+}
+
+/*classes*/
+
+.container {
+    width: 1440px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headline {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.t-n {
+    font-weight: 400;
+}
+
+.t-m {
+    font-weight: 500;
+}
+
+.t-b {
+    font-weight: 700;
+}
+
+.t-32 {
+    font-size: 32px;
+}
+
+.t-36 {
+    font-size: 36px;
+}
+
+.t-40 {
+    font-size: 40px;
+}
+
+.t-128 {
+    font-size: 128px;
+}
+
+.c-lightgray {
+    color: #646464;
+}
+
+.c-lightorange {
+ color: #FF7D45;
+}
+
+/*header*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.header .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.header .nav .item {
+    color: black;
+    transition: 0.1s;
+}
+.header .nav .item:hover {
+    border-bottom: 2px solid #FC4C00;
+}
+
+/*nav*/
+
+.nav-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-wrap .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.nav-wrap .nav .col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.nav-wrap .nav .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px;
+    color: white;
+    background-color: #FF7D45;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.nav-wrap .nav .item:hover {
+    background-color: #FC4C00;
+}
+
+/*manager*/
+
+.manager-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.manager-wrap .manager {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+}
+
+.manager-wrap .manager img {
+    width: 400px;
+    border-radius: 30px;
+}
+
+/*history*/
+
+.history-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.history-wrap .history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.history-wrap .history .main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.history-wrap .history img {
+    width: 100%;
+}
+
+/*teachers*/
+
+.teachers-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.teachers-wrap .teachers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.teachers-wrap .teachers .teacher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.teachers-wrap .teacher .position {
+    text-align: center;
+    width: 30%;
+}
+
+/*colored-area*/
+
+.colored-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #FFF3EE;
+}
+
+/*employers*/
+
+.employers-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.employers-wrap .employers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/*trips*/
+
+.trips-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.trips-wrap .trips-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+/*contacts*/
+
+.contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.contact .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.footer .info div {
+    text-align: right;
+}
+
+
+@media (max-width: 320px) {
+
+/*page*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100vw;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #5B5656;
+}
+
+/*classes*/
+
+.container {
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headline {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.t-n {
+    font-weight: 400;
+}
+
+.t-m {
+    font-weight: 500;
+}
+
+.t-b {
+    font-weight: 700;
+}
+
+.t-32 {
+    font-size: 16px;
+}
+
+.t-36 {
+    font-size: 18px;
+}
+
+.t-40 {
+    font-size: 20px;
+}
+
+.t-128 {
+    font-size: 64px;
+}
+
+.c-lightgray {
+    color: #646464;
+}
+
+.c-lightorange {
+ color: #FF7D45;
+}
+
+/*header*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 0px;
+}
+
+.header .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.header .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.header .nav .item {
+    text-align: center;
+    color: black;
+    transition: 0.1s;
+}
+.header .nav .item:hover {
+    border-bottom: 2px solid #FC4C00;
+}
+
+.header .age-rate {
+    display: none;
+}
+
+.header .phone-number {
+    display: none;
+}
+
+/*nav*/
+
+.nav-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-wrap .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.nav-wrap .nav .col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.nav-wrap .nav .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px;
+    color: white;
+    background-color: #FF7D45;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.nav-wrap .nav .item:hover {
+    background-color: #FC4C00;
+}
+
+/*manager*/
+
+.manager-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.manager-wrap .manager {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.manager div {
+    text-align: center;
+}
+
+.manager-wrap .manager img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+/*history*/
+
+.history-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.history-wrap .history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.history div {
+    text-align: center;
+}
+
+.history-wrap .history .main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.history-wrap .history img {
+    width: 100%;
+}
+
+/*teachers*/
+
+.teachers-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.teachers-wrap .teachers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.teachers-wrap .teachers .teacher {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.teachers-wrap .teacher .position {
+    text-align: center;
+    width: auto;
+}
+
+/*colored-area*/
+
+.colored-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #FFF3EE;
+}
+
+/*employers*/
+
+.employers-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.employers-wrap {
+    text-align: center;
+}
+
+.employers-wrap .employers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.employers img {
+    width: 200px;
+}
+
+/*trips*/
+
+.trips-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.trips-wrap div {
+    text-align: center;
+}
+
+.trips-wrap .trips-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.trips-imgs img {
+    width: 250px;
+}
+
+/*contacts*/
+
+.contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.contact .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    gap: 50px;
+}
+
+.footer .info div {
+    text-align: center;
+}
+
+}
